@@ -1,12 +1,29 @@
 * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
 }
 
 body {
       background-color: #083042;
       color: white;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+      width: 90%;
+      max-width: 930px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+#head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
 }
 
 header {
@@ -25,7 +42,6 @@ header {
 
 .nav-bar {
       display: flex;
-      align-items: ce;
 }
 
 header ul {
@@ -72,39 +88,40 @@ header ul {
       cursor: pointer;
 }
 
-section {
+/* section {
       padding: 1rem 13%;
       margin: 6rem 0;
-}
+} */
 
 .home {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      /* justify-content: space-between; */
       animation: fade-in-down 2s ease 1;
+}
+
+.margin {
+      margin-top: 8em;
+      margin-bottom: 6em;
 }
 
 .homeTxt {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      float: left;
       justify-content: space-between;
 }
 
 .home-img img {
-      height: 50%;
       width: 50%;
       border-radius: 50%;
       border: 5px solid #083042;
-      /* border-image:
-            linear-gradient(to right, #3cdb83 0%, #3cdb83 33%, #548ca4 33%, #548ca4 66%, #4484f3 66%, #4484f3 100%); */
       border-image-slice: 1;
       box-shadow: 0 0 10px #3cdb83;
       transition: transform 0.7s ease-out;
       animation: fade-in-down 1s ease 1;
-
+      float: right;
 }
 
 @keyframes fade-in-down {
@@ -191,7 +208,7 @@ section {
 }
 
 .social {
-      margin-top: 5em;
+      margin-top: 2em;
 }
 
 .social a {
@@ -220,7 +237,8 @@ section {
       display: flex;
       justify-content: space-between;
       align-items: initial;
-
+      gap: 2em;
+      margin-bottom: 6em;
 }
 
 .about-img {
@@ -239,6 +257,42 @@ section {
       width: 50%;
 }
 
+@media (max-width:730px) {
+      .home {
+            margin-top: 10em;
+            flex-direction: column;
+      }
+
+      .home-img img {
+            float: none;
+            margin-left: 25%;
+      }
+
+      .about {
+            flex-direction: column-reverse;
+      }
+
+      .about-img {
+            width: 100%;
+            height: 50%;
+      }
+
+      .about-txt {
+            width: 100%;
+      }
+
+      header {
+            flex-direction: column;
+            gap: 3em;
+            align-items: center;
+      }
+
+      #head {
+            flex-direction: column;
+            gap: 2em;
+      }
+}
+
 #about-heading {
       text-align: center;
       margin-bottom: 1em;
@@ -254,7 +308,7 @@ section {
 }
 
 #intro-sub-heading {
-      font-size: 0.3rem;
+      font-size: 0.7rem;
       font-weight: bold;
       color: #548ca4;
       margin-bottom: 2em;
@@ -265,7 +319,7 @@ span {
 }
 
 #about-paragraph {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-bottom: 1em;
 }
 
@@ -331,7 +385,7 @@ span {
 .skills-div {
       padding: 1rem;
       background-color: #194083;
-      border-radius: 2%;
+      border-radius: 10px;
       display: grid;
       grid-template-columns: repeat(4, 0.5fr);
       margin-bottom: 1.em;
@@ -346,7 +400,7 @@ span {
 .skills-div .img {
       border-radius: 5%;
       background-color: #000817;
-      padding: 1.5em 2em;
+      padding: 1em 1em;
       padding-bottom: 1em;
       margin: 1em;
       text-align: center;
@@ -385,7 +439,6 @@ span {
       margin-top: 0;
       padding-top: 1em;
       text-align: center;
-      padding: 1em 10%;
       padding-bottom: 2em;
       align-items: center;
       margin-bottom: 0;
@@ -407,7 +460,7 @@ span {
 .pj-div {
       border-radius: 0.5em;
       background-color: #80ceef;
-      margin: 1em 2em;
+      margin: 1em 1em;
       padding: 0.5em 0.5em;
       display: flex;
       flex-direction: column;
@@ -532,9 +585,8 @@ span {
       margin-top: 0;
       padding-top: 1em;
       text-align: center;
-      padding: 1em 10%;
       padding-bottom: 2em;
-     margin-bottom: 1em;
+      margin-bottom: 1em;
       background-color: #d7f1ff;
 }
 
@@ -551,7 +603,7 @@ span {
 .edu-sub-list {
       border-radius: 0.3em;
       background-color: white;
-      margin: 1em 2em;
+      margin: 1em 1em;
       display: flex;
       flex-direction: row;
       gap: 1rem;
@@ -560,28 +612,32 @@ span {
       color: rgba(210, 209, 209, 0.544);
 }
 
-.bg-image{
+.bg-image {
       border-top-left-radius: 0.3em;
       border-bottom-left-radius: 0.3em;
       width: 40%;
-     height: 200px;
-     object-fit: fill;
+      height: 200px;
+      object-fit: fill;
 }
-#img1{
+
+#img1 {
       background: url("image/images.jpg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
 }
-#img2{
+
+#img2 {
       background: url("image/sishu.jpg");
       background-repeat: no-repeat;
-      background-size:cover;
+      background-size: cover;
 }
-#img3{
+
+#img3 {
       background: url("image/gkkhd.jpg");
       background-repeat: no-repeat;
       background-size: cover;
 }
+
 .edu-txt {
       display: flex;
       flex-direction: column;
@@ -593,95 +649,122 @@ span {
 .ed-discuss {
       text-align: start;
 }
-.class-head{
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.class-head {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 1.2em;
       font-weight: 600;
       color: #083042;
       margin-bottom: 1em;
 }
-.ed-discuss{
+
+.ed-discuss {
       margin-bottom: 1em;
 }
-.edu-status{
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.ed-discuss p {
+      margin-bottom: 0.5em;
+}
+
+.edu-status {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 1.1rem;
       color: #037940;
       font-weight: bold;
 }
+
 @media (max-width:950px) {
       .edu-sub-list {
             flex-direction: column;
-       }
-       .bg-image{
+      }
+
+      .bg-image {
             width: 100%;
             background-size: contain;
             border-top-right-radius: 0.3em;
             border-bottom-left-radius: 0em;
-       }
-       #img1{
+      }
+
+      #img1 {
             background-size: cover;
-       }
-       .edu-txt{
+      }
+
+      .edu-txt {
             padding: 0 1em;
             padding-bottom: 1em;
-       }
+      }
 }
-footer{
-      padding: 1em 10%;
+
+footer {
+      width: 90%;
+      max-width: 930px;
+      margin: auto;
       display: flex;
-      gap: 2em;
-      
+      gap: 3em;
+      justify-content: space-between;
+
 }
-.ft-heading,.contact-head{
+
+.ft-heading,
+.contact-head {
       font-size: 1.5rem;
       color: white;
 }
-.ft-txt p{
+
+.ft-txt p {
       margin-top: 1em;
       font-size: 0.9rem;
       color: whitesmoke;
 }
-.ph,.email,.address{
+
+.ph,
+.email,
+.address {
       margin-top: 0.5em;
       font-size: 0.9rem;
       color: whitesmoke;
 }
-.contact .fa{
-   margin-right: 0.5em;
-   color: #34bc6c;
+
+.contact .fa {
+      margin-right: 0.5em;
+      color: #34bc6c;
 }
-.social-icon .fa{
-  margin-top: 0.5em;
-  padding: 0.5em;
-  background-color: whitesmoke;
-  border-radius: 2em;
- color: #083042;
+
+.social-icon .fa {
+      margin-top: 0.5em;
+      padding: 0.5em;
+      background-color: whitesmoke;
+      border-radius: 2em;
+      color: #083042;
 }
-.social-icon .fa:hover{
-   background-color: white;
-   color: #000817;
+
+.social-icon .fa:hover {
+      background-color: white;
+      color: #000817;
 }
-.foot{
+
+.foot {
       text-align: center;
       padding-bottom: 1em;
 }
-#cd{
+
+#cd {
       font-size: 1rem;
       font-weight: normal;
       color: #34bc6c;
 }
-.h-line{
-     margin: 0.6em 5em;
-      background-color:rgba(240, 248, 255, 0.501) ;
+
+.h-line {
+      margin: 0.6em 5em;
+      background-color: rgba(240, 248, 255, 0.501);
       height: 0.1em;
 }
+
 @media (max-width:630px) {
-      footer{
+      footer {
             padding: 1em 10%;
             display: flex;
             flex-direction: column;
-            
+
       }
 }
-
