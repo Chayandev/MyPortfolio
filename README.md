@@ -1,3 +1,5 @@
-# MyPortfolio
+## MyPortfolio
 
-Currecntly its not responsive properly, try to visit it via pc or laptop.
+###This is my personal website , to showcase my abilities,skills, projects and about me.
+
+## Deployed links 🔗
