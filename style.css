@@ -294,6 +294,7 @@ header ul {
       align-items: initial;
       gap: 2em;
       margin-bottom: 6em;
+      animation: fade-in-down 2s ease 1;
 }
 
 .about-img {
@@ -448,6 +449,7 @@ span {
       padding-bottom: 2em;
       margin-bottom: 0;
       align-items: center;
+      animation: fade-in-down 2s ease 1;
 }
 
 .skills-div {
@@ -510,6 +512,7 @@ span {
       padding-bottom: 2em;
       align-items: center;
       margin-bottom: 0;
+      animation: fade-in-down 2s ease 1;
 }
 
 .pj-div-container {
@@ -656,6 +659,7 @@ span {
       padding-bottom: 2em;
       margin-bottom: 1em;
       background-color: #d7f1ff;
+      animation: fade-in-down 2s ease 1;
 }
 
 #edu {
@@ -770,6 +774,7 @@ footer {
       display: flex;
       gap: 3em;
       justify-content: space-between;
+      animation: fade-in-down 2s ease 1;
 
 }
 
