@@ -390,7 +390,8 @@ span {
 }
 
 .about-details li {
-      margin-bottom: 0.9rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
 }
 
 #same {
