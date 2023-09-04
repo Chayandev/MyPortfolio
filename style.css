@@ -123,7 +123,7 @@ header ul {
       border-radius: 50%;
       border: 5px solid transparent;
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(0deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(0deg, #083042 50%,#3cdb83 50%) border-box;
       border-image-slice: 1;
       box-shadow: 0 0 15px #3cdb83;
       transition: transform 0.7s ease-out;
