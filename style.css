@@ -123,7 +123,7 @@ header ul {
       border-radius: 50%;
       border: 5px solid transparent;
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(0deg, #083042 50%,#3cdb83 50%) border-box;
+      linear-gradient(0deg,#548ca4 50%,#306acf 50%) border-box;
       border-image-slice: 1;
       box-shadow: 0 0 15px #3cdb83;
       transition: transform 0.7s ease-out;
@@ -135,43 +135,43 @@ header ul {
 {
 10%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(36deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(36deg, #548ca4 50%,#306acf 50%) border-box;
   }
   20%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(72deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(72deg, #548ca4 50%,#306acf 50%) border-box;
   }
   30%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(108deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(108deg, #548ca4 50%,#306acf 50%) border-box;
   }
   40%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(144deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(144deg, #548ca4 50%,#306acf 50%) border-box;
   }
 50%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(180deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(180deg, #548ca4 50%,#306acf 50%) border-box;
   }
   60%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(216deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(216deg, #548ca4 50%,#306acf 50%) border-box;
   }
   70%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(252deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(252deg, #548ca4 50%,#306acf 50%) border-box;
   }
   80%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(288deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(288deg, #548ca4 50%,#306acf 50%) border-box;
   }
   90%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(324deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(324deg, #548ca4 50%,#306acf 50%) border-box;
   }
   100%{
       background: linear-gradient(white, white) padding-box,
-      linear-gradient(360deg, #083042 50%,#306acf 50%) border-box;
+      linear-gradient(360deg, #548ca4 50%,#306acf 50%) border-box;
   }
 
 }
