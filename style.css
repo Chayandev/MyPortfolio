@@ -60,6 +60,13 @@ header ul {
       cursor: pointer;
 }
 
+.logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
 #logo_txt {
       text-align: center;
       font-family: 'Russo One', sans-serif;
@@ -101,6 +108,15 @@ header ul {
       padding: 1rem 13%;
       margin: 6rem 0;
 } */
+.android-icon{
+      margin-top: 6em;
+}
+.android-icon img {
+      width: 100px;
+      height: 80px;
+      transform: rotate(180deg);
+      
+}
 
 .home {
       display: flex;
@@ -108,11 +124,11 @@ header ul {
       gap: 2em;
       justify-content: space-between;
       animation: fade-in-down 2s ease 1;
-      
+
 }
 
 .margin {
-      padding-top: 8em;
+      padding-top: 5em;
 }
 
 .homeTxt {
@@ -340,9 +356,9 @@ header ul {
       }
 }
 
-@media (max-width:820px) {
+@media (max-width:920px) {
       .home {
-            margin-top: 10em;
+            /* margin-top: -5em; */
             flex-direction: column;
       }
 
@@ -628,14 +644,14 @@ span {
 
 .skills-div img {
       /* background-color: #041618; */
-      height: 50%;
-      width: 50%;
+      height: 60%;
+      width: 60%;
 
 }
 
-.skills-div .img h5 {
-      margin-top: 1em;
-}
+/* .skills-div .img h4 {
+      margin-bottom: 0.5em;
+} */
 
 .skills-div .img:hover {
       transform: scale(1.1);
@@ -810,7 +826,7 @@ span {
 
 .more {
       text-align: center;
-     margin-top: 2em;
+      margin-top: 2em;
 }
 
 .more a {
@@ -845,7 +861,7 @@ span {
       text-align: center;
       padding-bottom: 5em;
       margin-bottom: 1em;
-      background-color: #d7f1ff;
+      background-color: #548ca4;
       animation: fade-in-down 2s ease 1;
 }
 
@@ -861,7 +877,7 @@ span {
 
 .edu-sub-list {
       border-radius: 0.3em;
-      background-color: #d7f1ff;
+      background-color: #bde2f7;
       margin: 1em 1em;
       display: flex;
       flex-direction: row;
@@ -882,21 +898,21 @@ span {
 }
 
 #img1 {
-      background: url("image/images.jpg");
+      background: url("image/rcciit.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
 }
 
 #img2 {
-      background: url("image/sishu.jpg");
+      background: url("image/ksshs.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
 }
 
 #img3 {
-      background: url("image/gkkhd.jpg");
+      background: url("image/gkkhs.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
 }
 
 .edu-txt {
@@ -939,6 +955,7 @@ span {
             flex-direction: column;
             /* align-items: flex-start; */
       }
+
       /* .bg-image{
             align-self: center;
       }
