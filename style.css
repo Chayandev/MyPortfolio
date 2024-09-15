@@ -622,6 +622,8 @@ span {
       border-radius: 10px;
       display: grid;
       grid-template-columns: repeat(4, 0.5fr);
+      gap: 1.5rem;
+      justify-content: center;
       margin-bottom: 1.em;
 }
 
@@ -632,12 +634,13 @@ span {
 }
 
 .skills-div .img {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       border-radius: 5%;
       background-color: #000817;
       padding: 1em 1em;
-      padding-bottom: 1em;
-      margin: 1em;
-      text-align: center;
       transition: transform 0.5s ease;
       box-shadow: 0 5px 15px #083042;
 }
@@ -660,12 +663,14 @@ span {
 @media (max-width:800px) {
       .skills-div {
             grid-template-columns: repeat(3, 0.5fr);
+     
       }
 }
 
 @media (max-width:630px) {
       .skills-div {
             grid-template-columns: repeat(2, 0.5fr);
+            
       }
 }
 
