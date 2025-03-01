@@ -7,3 +7,4 @@
 ## Deployed links 🔗
 https://chayandev.github.io/MyPortfolio/
 
+### Currently this is not maintained, visit my new portfolio [here](https://chayandevbera.vercel.app/)
